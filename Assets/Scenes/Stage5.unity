@@ -634,7 +634,7 @@ GameObject:
   - component: {fileID: 605763250}
   - component: {fileID: 605763251}
   m_Layer: 0
-  m_Name: vo8(1)_3
+  m_Name: incubation chamber_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2607,7 +2607,7 @@ GameObject:
   - component: {fileID: 852817304}
   - component: {fileID: 852817305}
   m_Layer: 0
-  m_Name: vo8(1)_1
+  m_Name: carbinet(1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3009,7 +3009,7 @@ GameObject:
   - component: {fileID: 1029806092}
   - component: {fileID: 1029806093}
   m_Layer: 0
-  m_Name: vo8(1)_2
+  m_Name: incubation chamber
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3177,7 +3177,7 @@ GameObject:
   - component: {fileID: 1170175459}
   - component: {fileID: 1170175460}
   m_Layer: 0
-  m_Name: vo8(1)_1
+  m_Name: carbinet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
