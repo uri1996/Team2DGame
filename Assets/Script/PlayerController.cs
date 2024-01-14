@@ -8,7 +8,12 @@ public class PlayerController : MonoBehaviour
     Animator animator;  //歩行アニメーションの再生速度追加プログラム
     float jumpForce = 300.0f;   
     float walkForce = 30.0f;    
-    float maxWalkSpeed = 4.0f;  
+    float maxWalkSpeed = 4.0f;
+
+    bool isBallAttached = false;
+    private GameObject attachedBall;
+
+    public GameObject blackDoorLocation;
 
     void Start()
     {
@@ -30,6 +35,7 @@ public class PlayerController : MonoBehaviour
 		if (Input.GetKey(KeyCode.RightArrow)) key = 1;
 		if (Input.GetKey(KeyCode.LeftArrow)) key = -1;
 
+
 		//プレイヤの速度
 		float speedx = Mathf.Abs(this.rigid2D.velocity.x);
 
@@ -49,6 +55,67 @@ public class PlayerController : MonoBehaviour
 
         //プレイヤーの速度に応じてアニメーション速度を変える
         this.animator.speed = speedx / 2.0f;　//歩行アニメーションの再生速度追加プログラム
+
+        //ボールと合体/分裂する
+        if(Input.GetKeyDown(KeyCode.F))
+        {
+            if (isBallAttached)
+            {
+                DetachBall();
+            }
+            else
+            {
+                if(!isBallAttached && attachedBall != null)
+                {
+                    AttachBall(attachedBall);
+                }
+            }
+
+        }
     }
 
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        //ボールだったら、ボールのオブジェクトを変数に入れる
+        if(collision.CompareTag("Ball"))
+        {
+            attachedBall = collision.gameObject;
+        }
+
+        //白ドアだったら、次の指定された白ドアの場所に移動
+        if(collision.CompareTag("WhiteDoor"))
+        {
+
+        }
+        else if(collision.CompareTag("BlackDoor"))      //黒ドアだったら、次の指定された黒ドアの場所に移動
+        {
+            transform.position = blackDoorLocation.transform.position;
+        }
+
+    }
+
+    //ボールと合体する
+    void AttachBall(GameObject ball)
+    {
+        if(!isBallAttached)
+        {
+            isBallAttached = true;
+            attachedBall = ball;
+            attachedBall.transform.parent = transform;
+            attachedBall.GetComponent<Rigidbody2D>().isKinematic = true;
+        }
+    }
+
+    //ボールと分裂する
+    void DetachBall()
+    {
+        if(isBallAttached)
+        {
+            isBallAttached = false;
+            attachedBall.transform.parent = null;
+            attachedBall.GetComponent<Rigidbody2D>().isKinematic = false;
+            attachedBall = null;
+        }
+    }
 }
+
