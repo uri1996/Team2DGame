@@ -1139,6 +1139,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: incubation chamber_B
       objectReference: {fileID: 0}
+    - target: {fileID: 4629273962596069122, guid: 04eea29722995504e98c92843f676d0b, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 5529735397446565086, guid: 04eea29722995504e98c92843f676d0b, type: 3}
       propertyPath: m_RootOrder
       value: -1
@@ -1199,6 +1203,10 @@ PrefabInstance:
     - target: {fileID: 1992329102230654363, guid: d608c40c8c2486b4f92a107050ef9c48, type: 3}
       propertyPath: m_Name
       value: carbinet (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332847633631104250, guid: d608c40c8c2486b4f92a107050ef9c48, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6123079971314072439, guid: d608c40c8c2486b4f92a107050ef9c48, type: 3}
       propertyPath: m_RootOrder
@@ -1396,6 +1404,10 @@ PrefabInstance:
     - target: {fileID: 1992329102230654363, guid: d608c40c8c2486b4f92a107050ef9c48, type: 3}
       propertyPath: m_Name
       value: carbinet
+      objectReference: {fileID: 0}
+    - target: {fileID: 4332847633631104250, guid: d608c40c8c2486b4f92a107050ef9c48, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6123079971314072439, guid: d608c40c8c2486b4f92a107050ef9c48, type: 3}
       propertyPath: m_RootOrder
@@ -1597,6 +1609,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1534286990}
     m_Modifications:
+    - target: {fileID: 6599232650522049426, guid: 47e648fed29af9d4b8f23194db2d7b00, type: 3}
+      propertyPath: m_SortingOrder
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8203380374318785000, guid: 47e648fed29af9d4b8f23194db2d7b00, type: 3}
       propertyPath: m_Name
       value: incubation chamber_A
