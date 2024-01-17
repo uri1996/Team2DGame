@@ -10,8 +10,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer rendererC;
     AudioSource audioSource;
 
-    float jumpForce = 300.0f;   
-    float walkForce = 30.0f;    
+    float jumpForce = 250.0f;   
+    float walkForce = 15.0f;    
     float maxWalkSpeed = 4.0f;
 
     bool isBallAttached = false;
