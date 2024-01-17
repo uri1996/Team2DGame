@@ -582,6 +582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66994391ebe7e52428d4fc195cd6c576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blackDoorLocation: {fileID: 0}
 --- !u!212 &1807010259
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -756,7 +757,6 @@ GameObject:
   - component: {fileID: 1815380202}
   - component: {fileID: 1815380203}
   - component: {fileID: 1815380204}
-  - component: {fileID: 1815380205}
   m_Layer: 0
   m_Name: vo8_64
   m_TagString: Ball
@@ -891,7 +891,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &1815380203
 MonoBehaviour:
@@ -940,15 +940,3 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.71
---- !u!114 &1815380205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1815380198}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbe5a92fe66b3a946bd99ea82b38c8d0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

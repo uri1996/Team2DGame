@@ -15,11 +15,14 @@ public class PlayerController : MonoBehaviour
 
     public GameObject blackDoorLocation;
 
+    private BallScript ball;
+
     void Start()
     {
         Application.targetFrameRate = 60;
         this.rigid2D = GetComponent<Rigidbody2D>();
         this.animator = GetComponent<Animator>();  //歩行アニメーションの再生速度追加プログラム
+        ball = GameObject.FindGameObjectWithTag("Ball").GetComponent<BallScript>();
     }
 
     void Update()
@@ -62,12 +65,14 @@ public class PlayerController : MonoBehaviour
             if (isBallAttached)
             {
                 DetachBall();
+                ball.isPickedUP = false;
             }
             else
             {
                 if(!isBallAttached && attachedBall != null)
                 {
                     AttachBall(attachedBall);
+                    ball.isPickedUP = true;
                 }
             }
 
