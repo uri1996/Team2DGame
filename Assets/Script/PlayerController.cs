@@ -11,8 +11,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer rendererC;
     AudioSource audioSource;
 
-    float jumpForce = 300.0f;   
-    float walkForce = 30.0f;    
+    float jumpForce = 250.0f;   
+    float walkForce = 15.0f;    
     float maxWalkSpeed = 4.0f;
 
     bool isBallAttached = false;
@@ -42,16 +42,25 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
             {
                 this.rigid2D.AddForce(transform.up * this.jumpForce);
+            animator.SetTrigger("Jump");
         }
 
 		//左右に移動する
 		int key = 0;
-		if (Input.GetKey(KeyCode.RightArrow)) key = 1;
-		if (Input.GetKey(KeyCode.LeftArrow)) key = -1;
+        if (Input.GetKey(KeyCode.RightArrow))
+        {
+            key = 1;
+            animator.SetTrigger("Walk");
+        }
+        if (Input.GetKey(KeyCode.LeftArrow))
+        {
+            key = -1;
+            animator.SetTrigger("Walk");
+        }
 
 
-		//プレイヤの速度
-		float speedx = Mathf.Abs(this.rigid2D.velocity.x);
+            //プレイヤの速度
+            float speedx = Mathf.Abs(this.rigid2D.velocity.x);
 
         //スピード制限
         //左右方向それぞれに移動制限の条件を分ける
@@ -82,6 +91,7 @@ public class PlayerController : MonoBehaviour
                 if(!isBallAttached && attachedBall != null)
                 {
                     AttachBall(attachedBall);
+                    animator.SetTrigger("Push");
                 }
             }
         }
