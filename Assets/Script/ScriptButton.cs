@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+
 public class ScriptButton : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -14,11 +16,13 @@ public class ScriptButton : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        OnButtonDown();
     }
 
     public void OnButtonDown()
     {
-        SceneManager.LoadScene("Stage1");
+        Gamepad gamepad = Gamepad.current;
+        if (gamepad.buttonEast.wasPressedThisFrame || gamepad.buttonSouth.wasPressedThisFrame)
+            SceneManager.LoadScene("Stage1");
     }
 }

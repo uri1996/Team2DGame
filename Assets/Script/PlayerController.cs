@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
 
 public class PlayerController : MonoBehaviour
 {
@@ -38,8 +39,10 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        Gamepad gamepad = Gamepad.current;
         //ジャンプする
-        if (Input.GetKeyDown(KeyCode.Space)) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
+        if (Input.GetKeyDown(KeyCode.Space)||
+            gamepad.buttonSouth.wasPressedThisFrame) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
             {
                 this.rigid2D.AddForce(transform.up * this.jumpForce);
             animator.SetTrigger("Jump");
@@ -47,12 +50,13 @@ public class PlayerController : MonoBehaviour
 
 		//左右に移動する
 		int key = 0;
-        if (Input.GetKey(KeyCode.RightArrow))
+        float horizontalInput = gamepad.leftStick.x.ReadValue();
+        if (Input.GetKey(KeyCode.RightArrow) || horizontalInput> 0.5)
         {
             key = 1;
             animator.SetTrigger("Walk");
         }
-        if (Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow) || horizontalInput < -0.5)
         {
             key = -1;
             animator.SetTrigger("Walk");
@@ -80,7 +84,8 @@ public class PlayerController : MonoBehaviour
         this.animator.speed = speedx / 2.0f;　//歩行アニメーションの再生速度追加プログラム
 
         //ボールと合体/分裂する
-        if(Input.GetKeyDown(KeyCode.F))
+        if(Input.GetKeyDown(KeyCode.F) ||
+            gamepad.buttonEast.wasPressedThisFrame)
         {
             if (isBallAttached)
             {
