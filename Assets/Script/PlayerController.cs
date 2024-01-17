@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -18,7 +19,8 @@ public class PlayerController : MonoBehaviour
     bool isChangedColor = false;
     private GameObject attachedBall;
 
-    public GameObject blackDoorLocation;
+    public GameObject blackDoor;
+    public GameObject whiteDoor;
 
     public Color playerColor;//プレイヤの色
 
@@ -31,6 +33,7 @@ public class PlayerController : MonoBehaviour
         this.animator = GetComponent<Animator>();  //歩行アニメーションの再生速度追加プログラム
         this.rendererC = GetComponent<SpriteRenderer>();
         this.audioSource = GetComponent<AudioSource>();
+        tmpColor = playerColor;
     }
 
     void Update()
@@ -98,46 +101,7 @@ public class PlayerController : MonoBehaviour
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
-    {
-        /*前のプログラム
-
-//ボールだったら、ボールのオブジェクトを変数に入れる
-if(collision.CompareTag("Ball"))
-{
-    attachedBall = collision.gameObject;
-}
-
-//白ドアだったら、次の指定された白ドアの場所に移動
-if(collision.CompareTag("WhiteDoor"))
-{
-
-}
-else if(collision.CompareTag("BlackDoor"))      //黒ドアだったら、次の指定された黒ドアの場所に移動
-{
-    transform.position = blackDoorLocation.transform.position;
-}
-
-
-if (collision.CompareTag("Mirror"))
-{
-    if (!isChangedColor)
-    {
-        isChangedColor = true;
-        if (playerColor == Color.white)
-        {
-            playerColor = Color.black;
-        }
-        else
-        {
-            playerColor = Color.white;
-        }
-        //色を変更
-        rendererC.color = playerColor;
-    }
-}
-*/
-        //提案:switch文にしたほうがよいのでは?
-        
+    {   
         switch(collision.tag)
         {
             //ボールだったら、ボールのオブジェクトを変数に入れる
@@ -147,12 +111,34 @@ if (collision.CompareTag("Mirror"))
 
             //白ドアだったら、次の指定された白ドアの場所に移動
             case "WhiteDoor":
-                //空実装
-                break;
+                if (playerColor == Color.white)
+                {
+                    transform.position = whiteDoor.transform.position;
+                }
+                    break;
 
             //黒ドアだったら、次の指定された黒ドアの場所に移動
             case "BlackDoor":
-                transform.position = blackDoorLocation.transform.position;
+                if (playerColor == Color.black)
+                    transform.position = blackDoor.transform.position;
+                break;
+
+            //白ドア（クリア用）だったら、～～～～
+            case "WhiteClearDoor":
+                if (playerColor == Color.white)
+                {
+                    //「仮の処理」…現在のシーンの登録番号の次のシーンへ飛ぶ
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
+                break;
+
+            //黒ドア（クリア用）だったら、～～～～
+            case "BlackClearDoor":
+                if (playerColor == Color.black)
+                {
+                    //「仮の処理」…現在のシーンの登録番号の次のシーンへ飛ぶ
+                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                }
                 break;
 
             case "Mirror":

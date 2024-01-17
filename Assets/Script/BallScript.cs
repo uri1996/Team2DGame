@@ -12,4 +12,10 @@ public class BallScript : MonoBehaviour
             Destroy(collision.gameObject);
         }
     }
+
+    private void Update()
+    {
+        //カラーをゲーミング発光する
+        //GetComponent<SpriteRenderer>().color = Color.HSVToRGB((Time.time * 0.5f) % 1, 1, 1);
+    }
 }

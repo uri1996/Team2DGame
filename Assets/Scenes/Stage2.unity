@@ -1127,6 +1127,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8858288748506913206, guid: 47e648fed29af9d4b8f23194db2d7b00, type: 3}
   m_PrefabInstance: {fileID: 1307728641}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &634023805 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+  m_PrefabInstance: {fileID: 1045502378}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &635149235
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1314,6 +1319,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: blackDoor
+      value: 
+      objectReference: {fileID: 634023805}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: whiteDoor
+      value: 
+      objectReference: {fileID: 1804697789}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: playerColor.a
       value: 1
       objectReference: {fileID: 0}
@@ -1472,11 +1485,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.18
+      value: -0.15
       objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.48
+      value: -0.65
       objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1685,11 +1698,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1249449967362514284, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 16.22
+      value: 12.01
       objectReference: {fileID: 0}
     - target: {fileID: 1249449967362514284, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.5
+      value: 4.37
       objectReference: {fileID: 0}
     - target: {fileID: 1249449967362514284, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1726,6 +1739,10 @@ PrefabInstance:
     - target: {fileID: 4083740735181664055, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
       propertyPath: m_Name
       value: black door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083740735181664055, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
+      propertyPath: m_TagString
+      value: BlackClearDoor
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6895,6 +6912,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9e71002cdbadd0245b1feeb7a5ebf1ad, type: 3}
+--- !u!1 &1804697789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+  m_PrefabInstance: {fileID: 1910554921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1910554921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6909,11 +6931,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 4.28
+      value: 0.33
       objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.49
+      value: 4.36
       objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_LocalPosition.z
