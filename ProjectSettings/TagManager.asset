@@ -9,6 +9,8 @@ TagManager:
   - BlackDoor
   - WhiteDoor
   - Mirror
+  - BlackClearDoor
+  - WhiteClearDoor
   layers:
   - Default
   - TransparentFX
