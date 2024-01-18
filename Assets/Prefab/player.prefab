@@ -101,8 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66994391ebe7e52428d4fc195cd6c576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blackDoorLocation: {fileID: 0}
-  playerColor: {r: 0, g: 0, b: 0, a: 0}
+  blackDoor: {fileID: 0}
+  whiteDoor: {fileID: 0}
+  playerColor: {r: 1, g: 1, b: 1, a: 1}
   MirrorSE: {fileID: 8300000, guid: 5a0b6ce8022bc474b8fa348ac936279a, type: 3}
 --- !u!70 &1373017643692994906
 CapsuleCollider2D:
