@@ -9,6 +9,17 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
+<<<<<<< Updated upstream
     path: Assets/Scenes/Stage5.unity
     guid: 293ec987a270bc34985f26d014b83136
+=======
+    path: Assets/Scenes/TitleScene.unity
+    guid: d4341d3d678532e44911d2a78886ed72
+  - enabled: 1
+    path: Assets/Scenes/Stage01.unity
+    guid: fdbd1f2c50f64dd4c9e7611768161a6c
+  - enabled: 1
+    path: Assets/Scenes/EndingScene.unity
+    guid: 7ce267078c573974aac76992aff79050
+>>>>>>> Stashed changes
   m_configObjects: {}
