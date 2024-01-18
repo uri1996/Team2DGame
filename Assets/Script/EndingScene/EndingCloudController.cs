@@ -9,9 +9,9 @@ public class EndingCloudController : MonoBehaviour
     public GameObject Cloud1;
     public GameObject Cloud2;
 
-    private float Cloud0Speed = 0.002f;
-    private float Cloud1Speed = 0.0014f;
-    private float Cloud2Speed = 0.001f;
+    private float Cloud0Speed = 0.0018f;
+    private float Cloud1Speed = 0.0012f;
+    private float Cloud2Speed = 0.0008f;
  
     void FixedUpdate()
     {
