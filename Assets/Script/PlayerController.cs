@@ -12,8 +12,8 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer rendererC;
     AudioSource audioSource;
 
-    float jumpForce = 250.0f;   
-    float walkForce = 15.0f;    
+    float jumpForce = 250.0f;
+    float walkForce = 15.0f;
     float maxWalkSpeed = 4.0f;
 
     bool isBallAttached = false;
@@ -39,19 +39,27 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if (playerColor == Color.black)
+        {
+            gameObject.layer = 6;
+        }
+        else
+        {
+            gameObject.layer = 7;
+        }
         Gamepad gamepad = Gamepad.current;
         //ジャンプする
-        if (Input.GetKeyDown(KeyCode.Space)||
+        if (Input.GetKeyDown(KeyCode.Space) ||
             gamepad.buttonSouth.wasPressedThisFrame) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
-            {
-                this.rigid2D.AddForce(transform.up * this.jumpForce);
+        {
+            this.rigid2D.AddForce(transform.up * this.jumpForce);
             animator.SetTrigger("Jump");
         }
 
-		//左右に移動する
-		int key = 0;
+        //左右に移動する
+        int key = 0;
         float horizontalInput = gamepad.leftStick.x.ReadValue();
-        if (Input.GetKey(KeyCode.RightArrow) || horizontalInput> 0.5)
+        if (Input.GetKey(KeyCode.RightArrow) || horizontalInput > 0.5)
         {
             key = 1;
             animator.SetTrigger("Walk");
@@ -63,8 +71,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
-            //プレイヤの速度
-            float speedx = Mathf.Abs(this.rigid2D.velocity.x);
+        //プレイヤの速度
+        float speedx = Mathf.Abs(this.rigid2D.velocity.x);
 
         //スピード制限
         //左右方向それぞれに移動制限の条件を分ける
@@ -75,7 +83,7 @@ public class PlayerController : MonoBehaviour
         }
 
         //動く方向に応じて反転
-        if (key !=0)
+        if (key != 0)
         {
             transform.localScale = new Vector3(key, 1, 1);
         }
@@ -84,7 +92,7 @@ public class PlayerController : MonoBehaviour
         this.animator.speed = speedx / 2.0f;　//歩行アニメーションの再生速度追加プログラム
 
         //ボールと合体/分裂する
-        if(Input.GetKeyDown(KeyCode.F) ||
+        if (Input.GetKeyDown(KeyCode.F) ||
             gamepad.buttonEast.wasPressedThisFrame)
         {
             if (isBallAttached)
@@ -93,21 +101,22 @@ public class PlayerController : MonoBehaviour
             }
             else
             {
-                if(!isBallAttached && attachedBall != null)
+                if (!isBallAttached && attachedBall != null)
                 {
                     AttachBall(attachedBall);
                     animator.SetTrigger("Push");
                 }
             }
         }
+
         if (isChangedColor)
         {
             ChangeColorProcess();
         }
     }
     void OnTriggerEnter2D(Collider2D collision)
-    {   
-        switch(collision.tag)
+    {
+        switch (collision.tag)
         {
             //ボールだったら、ボールのオブジェクトを変数に入れる
             case "Ball":
@@ -120,12 +129,14 @@ public class PlayerController : MonoBehaviour
                 {
                     transform.position = whiteDoor.transform.position;
                 }
-                    break;
+                break;
 
             //黒ドアだったら、次の指定された黒ドアの場所に移動
             case "BlackDoor":
                 if (playerColor == Color.black)
+                {
                     transform.position = blackDoor.transform.position;
+                }
                 break;
 
             //白ドア（クリア用）だったら、～～～～
@@ -161,7 +172,7 @@ public class PlayerController : MonoBehaviour
                     isChangedColor = true;
                     this.audioSource.PlayOneShot(MirrorSE);
                 }
-            break;
+                break;
 
         }
     }
@@ -179,7 +190,7 @@ public class PlayerController : MonoBehaviour
     //ボールと合体する
     void AttachBall(GameObject ball)
     {
-        if(!isBallAttached)
+        if (!isBallAttached)
         {
             isBallAttached = true;
             attachedBall = ball;
@@ -191,7 +202,7 @@ public class PlayerController : MonoBehaviour
     //ボールと分裂する
     void DetachBall()
     {
-        if(isBallAttached)
+        if (isBallAttached)
         {
             isBallAttached = false;
             attachedBall.transform.parent = null;
@@ -218,7 +229,7 @@ public class PlayerController : MonoBehaviour
             tmpColor -= new Color(1.0f, 1.0f, 1.0f) * Time.deltaTime;
             if (tmpColor.r <= playerColor.r)//r,g,bは全て同じなため
             {
-                 rendererC.color = playerColor;
+                rendererC.color = playerColor;
                 isChangedColor = false;
                 return;
             }
