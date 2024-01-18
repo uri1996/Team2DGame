@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     SpriteRenderer rendererC;
     AudioSource audioSource;
 
-    float jumpForce = 250.0f;
+    float jumpForce = 375.0f;
     float walkForce = 15.0f;
     float maxWalkSpeed = 4.0f;
 
@@ -39,74 +39,83 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (playerColor == Color.black)
+        if (!isChangedColor)
         {
-            gameObject.layer = 6;
-        }
-        else
-        {
-            gameObject.layer = 7;
-        }
-        Gamepad gamepad = Gamepad.current;
-        //ジャンプする
-        if (Input.GetKeyDown(KeyCode.Space) ||
-            gamepad.buttonSouth.wasPressedThisFrame) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
-        {
-            this.rigid2D.AddForce(transform.up * this.jumpForce);
-            animator.SetTrigger("Jump");
-        }
-
-        //左右に移動する
-        int key = 0;
-        float horizontalInput = gamepad.leftStick.x.ReadValue();
-        if (Input.GetKey(KeyCode.RightArrow) || horizontalInput > 0.5)
-        {
-            key = 1;
-            animator.SetTrigger("Walk");
-        }
-        if (Input.GetKey(KeyCode.LeftArrow) || horizontalInput < -0.5)
-        {
-            key = -1;
-            animator.SetTrigger("Walk");
-        }
-
-
-        //プレイヤの速度
-        float speedx = Mathf.Abs(this.rigid2D.velocity.x);
-
-        //スピード制限
-        //左右方向それぞれに移動制限の条件を分ける
-        if ((key > 0 && this.rigid2D.velocity.x < this.maxWalkSpeed) ||
-            (key < 0 && this.rigid2D.velocity.x > -this.maxWalkSpeed))
-        {
-            this.rigid2D.AddForce(transform.right * key * this.walkForce);
-        }
-
-        //動く方向に応じて反転
-        if (key != 0)
-        {
-            transform.localScale = new Vector3(key, 1, 1);
-        }
-
-        //プレイヤーの速度に応じてアニメーション速度を変える
-        this.animator.speed = speedx / 2.0f;　//歩行アニメーションの再生速度追加プログラム
-
-        //ボールと合体/分裂する
-        if (Input.GetKeyDown(KeyCode.F) ||
-            gamepad.buttonEast.wasPressedThisFrame)
-        {
-            if (isBallAttached)
+            Debug.Log(gameObject.layer);
+            if (playerColor == Color.black)
             {
-                DetachBall();
+                gameObject.layer = 7;
             }
             else
             {
-                if (!isBallAttached && attachedBall != null)
+                gameObject.layer = 6;
+            }
+            Gamepad gamepad = Gamepad.current;
+            //ジャンプする
+            if (Input.GetKeyDown(KeyCode.Space) ||
+                gamepad.buttonSouth.wasPressedThisFrame) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
+            {
+                this.rigid2D.AddForce(transform.up * this.jumpForce);
+                animator.SetTrigger("Jump");
+            }
+
+            //左右に移動する
+            int key = 0;
+            float horizontalInput = gamepad.leftStick.x.ReadValue();
+            if (Input.GetKey(KeyCode.RightArrow) || horizontalInput > 0.5)
+            {
+                key = 1;
+                animator.SetTrigger("Walk");
+            }
+            if (Input.GetKey(KeyCode.LeftArrow) || horizontalInput < -0.5)
+            {
+                key = -1;
+                animator.SetTrigger("Walk");
+            }
+
+
+            //プレイヤの速度
+            float speedx = Mathf.Abs(this.rigid2D.velocity.x);
+
+            //スピード制限
+            //左右方向それぞれに移動制限の条件を分ける
+            if ((key > 0 && this.rigid2D.velocity.x < this.maxWalkSpeed) ||
+                (key < 0 && this.rigid2D.velocity.x > -this.maxWalkSpeed))
+            {
+                this.rigid2D.AddForce(transform.right * key * this.walkForce);
+            }
+
+            //動く方向に応じて反転
+            if (key != 0)
+            {
+                transform.localScale = new Vector3(key, 1, 1);
+            }
+
+            //プレイヤーの速度に応じてアニメーション速度を変える
+            this.animator.speed = speedx / 2.0f; //歩行アニメーションの再生速度追加プログラム
+
+            //ボールと合体/分裂する
+            if (Input.GetKeyDown(KeyCode.F) ||
+                gamepad.buttonEast.wasPressedThisFrame)
+            {
+                if (isBallAttached)
                 {
-                    AttachBall(attachedBall);
-                    animator.SetTrigger("Push");
+                    DetachBall();
+                }
+                else
+                {
+                    if (!isBallAttached && attachedBall != null)
+                    {
+                        AttachBall(attachedBall);
+                        animator.SetTrigger("Push");
+                    }
                 }
             }
+        }
+        else
+        {
+           this.rigid2D.isKinematic = true;
+           this.rigid2D.velocity = Vector3.zero;
         }
 
         if (isChangedColor)
@@ -220,6 +229,7 @@ public class PlayerController : MonoBehaviour
             if (tmpColor.r >= playerColor.r)//r,g,bは全て同じなため
             {
                 rendererC.color = playerColor;
+                this.rigid2D.isKinematic = false;
                 isChangedColor = false;
                 return;
             }
@@ -230,6 +240,7 @@ public class PlayerController : MonoBehaviour
             if (tmpColor.r <= playerColor.r)//r,g,bは全て同じなため
             {
                 rendererC.color = playerColor;
+                this.rigid2D.isKinematic = false;
                 isChangedColor = false;
                 return;
             }
