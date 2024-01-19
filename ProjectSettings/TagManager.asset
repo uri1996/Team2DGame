@@ -12,6 +12,7 @@ TagManager:
   - BlackClearDoor
   - WhiteClearDoor
   - TileMap
+  - Slime
   layers:
   - Default
   - TransparentFX

@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     bool isBallAttached = false;
     bool isChangedColor = false;
+    public bool isAbleToMove = true;
     private GameObject attachedBall;
 
     public GameObject blackDoor;
@@ -26,6 +27,7 @@ public class PlayerController : MonoBehaviour
     public Color playerColor;//プレイヤの色
 
     public AudioClip MirrorSE;
+    public AudioClip DeadSE;
     Color tmpColor;
     void Start()
     {
@@ -39,17 +41,18 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (!isChangedColor)
+        if (playerColor == Color.black)
+        {
+            gameObject.layer = 7;//黒レイヤー
+        }
+        else
+        {
+            gameObject.layer = 8;//白レイヤー
+        }
+        if (isAbleToMove)
         {
             Debug.Log(gameObject.layer);
-            if (playerColor == Color.black)
-            {
-                gameObject.layer = 7;
-            }
-            else
-            {
-                gameObject.layer = 6;
-            }
+
             Gamepad gamepad = Gamepad.current;
             //ジャンプする
             if (Input.GetKeyDown(KeyCode.Space) ||
@@ -114,8 +117,8 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-           this.rigid2D.isKinematic = true;
-           this.rigid2D.velocity = Vector3.zero;
+            //this.rigid2D.isKinematic = true;
+            this.rigid2D.velocity = new Vector3(0.0f, this.rigid2D.velocity.y, 0.0f);
         }
 
         if (isChangedColor)
@@ -134,35 +137,53 @@ public class PlayerController : MonoBehaviour
 
             //白ドアだったら、次の指定された白ドアの場所に移動
             case "WhiteDoor":
-                if (playerColor == Color.white)
+                if (playerColor == Color.white && collision.gameObject != whiteDoor.gameObject)
                 {
-                    transform.position = whiteDoor.transform.position;
+                    Invoke("Transparentize", 1);
+                    Invoke("MoveWhiteDoor", 2);
+                    isAbleToMove = false;
+                    collision.GetComponent<Animator>().SetTrigger("Open");
+                    collision.GetComponent<AudioSource>().Play();
                 }
                 break;
 
             //黒ドアだったら、次の指定された黒ドアの場所に移動
             case "BlackDoor":
-                if (playerColor == Color.black)
+                if (playerColor == Color.black && collision.gameObject != blackDoor.gameObject)
                 {
-                    transform.position = blackDoor.transform.position;
+                    Invoke("Transparentize", 1);
+                    Invoke("MoveBlackDoor", 2);
+                    isAbleToMove = false;
+                    collision.GetComponent<Animator>().SetTrigger("Open");
+                    collision.GetComponent<AudioSource>().Play();
                 }
                 break;
 
-            //白ドア（クリア用）だったら、～～～～
+            //白ドア（クリア用）だったら
             case "WhiteClearDoor":
                 if (playerColor == Color.white)
                 {
-                    //「仮の処理」…現在のシーンの登録番号の次のシーンへ飛ぶ
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    Invoke("Transparentize", 1);
+                    isAbleToMove = false;
+                    //ドアを開ける
+                    collision.GetComponent<Animator>().SetTrigger("Open");
+                    collision.GetComponent<AudioSource>().Play();
+                    //3秒後(アニメーションが終わってから)に次のシーンへ
+                    Invoke("ToNextScene", 3);
                 }
                 break;
 
-            //黒ドア（クリア用）だったら、～～～～
+            //黒ドア（クリア用）だったら
             case "BlackClearDoor":
                 if (playerColor == Color.black)
                 {
-                    //「仮の処理」…現在のシーンの登録番号の次のシーンへ飛ぶ
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                    Invoke("Transparentize", 1);
+                    isAbleToMove = false;
+                    //ドアを開ける
+                    collision.GetComponent<Animator>().SetTrigger("Open");
+                    collision.GetComponent<AudioSource>().Play();
+                    //3秒後(アニメーションが終わってから)に次のシーンへ
+                    Invoke("ToNextScene", 3);
                 }
                 break;
 
@@ -179,10 +200,10 @@ public class PlayerController : MonoBehaviour
                     }
                     //rendererC.color = playerColor;//即座に色を変更
                     isChangedColor = true;
+                    isAbleToMove = false;
                     this.audioSource.PlayOneShot(MirrorSE);
                 }
                 break;
-
         }
     }
     /*即座に切り替える時限定
@@ -195,6 +216,16 @@ public class PlayerController : MonoBehaviour
         }
     }
     */
+
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Slime"))
+        {
+            this.audioSource.PlayOneShot(DeadSE);
+            Transparentize();
+            Invoke("Retry", 2);
+        }
+    }
 
     //ボールと合体する
     void AttachBall(GameObject ball)
@@ -225,12 +256,13 @@ public class PlayerController : MonoBehaviour
     {
         if (playerColor == Color.white)
         {
-            tmpColor += new Color(1.0f, 1.0f, 1.0f, 1.0f) * Time.deltaTime;
+            tmpColor += new Color(1.0f, 1.0f, 1.0f) * Time.deltaTime;
             if (tmpColor.r >= playerColor.r)//r,g,bは全て同じなため
             {
                 rendererC.color = playerColor;
                 this.rigid2D.isKinematic = false;
                 isChangedColor = false;
+                isAbleToMove = true;
                 return;
             }
         }
@@ -242,11 +274,47 @@ public class PlayerController : MonoBehaviour
                 rendererC.color = playerColor;
                 this.rigid2D.isKinematic = false;
                 isChangedColor = false;
+                isAbleToMove = true;
                 return;
             }
         }
         rendererC.color = tmpColor;
         tmpColor.a = 1.0f;//透明度は変化させない
+    }
+
+    void MoveBlackDoor()
+    {
+        Appear();
+        transform.position = blackDoor.transform.position;
+        blackDoor.GetComponent<Animator>().SetTrigger("Open");
+        blackDoor.GetComponent<AudioSource>().Play();
+        isAbleToMove = true;
+    }
+    void MoveWhiteDoor()
+    {
+        Appear();
+        transform.position = whiteDoor.transform.position;
+        whiteDoor.GetComponent<Animator>().SetTrigger("Open");
+        whiteDoor.GetComponent<AudioSource>().Play();
+        isAbleToMove = true;
+    }
+
+    void ToNextScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+    void Retry()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+    void Transparentize()
+    {
+        rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, 0.0f);
+    }
+
+    void Appear()
+    {
+        rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, 1.0f);
     }
 }
 

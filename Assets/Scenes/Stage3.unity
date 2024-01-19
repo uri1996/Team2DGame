@@ -136,6 +136,10 @@ PrefabInstance:
       value: player
       objectReference: {fileID: 0}
     - target: {fileID: 1288097482747471213, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1288097482747471213, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -184,9 +188,29 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: DeadSE
+      value: 
+      objectReference: {fileID: 8300000, guid: 77c9e85e5acdd2849a3d58c6323812a4, type: 3}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: blackDoor
       value: 
       objectReference: {fileID: 677142286}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8057347675088768618, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: m_Color.b
       value: 0
