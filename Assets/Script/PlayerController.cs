@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
 
     bool isBallAttached = false;
     bool isChangedColor = false;
+    float targetAlpha = 1.0f;   //このアルファに向けて毎フレーム計算する
     public bool isAbleToMove = true;
     private GameObject attachedBall;
 
@@ -37,6 +38,7 @@ public class PlayerController : MonoBehaviour
         this.rendererC = GetComponent<SpriteRenderer>();
         this.audioSource = GetComponent<AudioSource>();
         tmpColor = playerColor;
+        tmpColor.a = playerColor.a = 1.0f;   //playerColorがたまにアルファ0になるので、代入しなおす
     }
 
     void Update()
@@ -94,8 +96,16 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = new Vector3(key, 1, 1);
             }
 
-            //プレイヤーの速度に応じてアニメーション速度を変える
-            this.animator.speed = speedx / 2.0f; //歩行アニメーションの再生速度追加プログラム
+            //プレイヤーの速度に応じてアニメーション速度を変える            
+            string anim_name = animator.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            if (anim_name.Contains("Walk"))
+            {
+                this.animator.speed = speedx / 2.0f; //歩行アニメーションの再生速度追加プログラム
+            }
+            else
+            {
+                this.animator.speed = 1.0f; //ジャンプ等の再生速度は一定
+            }
 
             //ボールと合体/分裂する
             if (Input.GetKeyDown(KeyCode.F) ||
@@ -125,6 +135,7 @@ public class PlayerController : MonoBehaviour
         {
             ChangeColorProcess();
         }
+        ChangeAlphaProcess();
     }
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -137,8 +148,22 @@ public class PlayerController : MonoBehaviour
 
             //白ドアだったら、次の指定された白ドアの場所に移動
             case "WhiteDoor":
-                if (playerColor == Color.white && collision.gameObject != whiteDoor.gameObject)
+                if (playerColor == Color.white)
                 {
+                    //ぶつかったドアのスクリプトを取得する
+                    DoorController doorScript = collision.gameObject.GetComponent<DoorController>();
+                    //行先のドアの情報を書き換える
+                    if (doorScript != null && doorScript.nextDoor != null)
+                    {
+                        //行先のドアがある
+                        whiteDoor = doorScript.nextDoor;
+                    }
+                    else
+                    {
+                        //行先のドアがないので、これ以上処理をしない
+                        break;
+                    }
+
                     Invoke("Transparentize", 1);
                     Invoke("MoveWhiteDoor", 2);
                     isAbleToMove = false;
@@ -149,8 +174,22 @@ public class PlayerController : MonoBehaviour
 
             //黒ドアだったら、次の指定された黒ドアの場所に移動
             case "BlackDoor":
-                if (playerColor == Color.black && collision.gameObject != blackDoor.gameObject)
+                if (playerColor == Color.black)
                 {
+                    //ぶつかったドアのスクリプトを取得する
+                    DoorController doorScript = collision.gameObject.GetComponent<DoorController>();
+                    //行先のドアの情報を書き換える
+                    if (doorScript != null && doorScript.nextDoor != null)
+                    {
+                        //行先のドアがある
+                        blackDoor = doorScript.nextDoor;
+                    }
+                    else
+                    {
+                        //行先のドアがないので、これ以上処理をしない
+                        break;
+                    }
+
                     Invoke("Transparentize", 1);
                     Invoke("MoveBlackDoor", 2);
                     isAbleToMove = false;
@@ -281,6 +320,31 @@ public class PlayerController : MonoBehaviour
         rendererC.color = tmpColor;
         tmpColor.a = 1.0f;//透明度は変化させない
     }
+    void ChangeAlphaProcess()
+    {
+        //float targetAlpha;   //このアルファに向けて毎フレーム計算する
+
+        if (rendererC.color.a < targetAlpha)
+        {
+            //アルファを上げる　＝　現れる方
+            tmpColor.a += 1.0f * Time.deltaTime;
+            if (tmpColor.a >= 1.0f)
+            {
+                tmpColor.a = 1.0f;
+            }
+            rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, tmpColor.a);
+        }
+        else if(rendererC.color.a > targetAlpha)
+        {
+            //アルファを下げる　＝　消える方
+            tmpColor.a -= 2.0f * Time.deltaTime;
+            if (tmpColor.a <= 0.0f)
+            {
+                tmpColor.a = 0.0f;
+            }
+            rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, tmpColor.a);
+        }
+    }
 
     void MoveBlackDoor()
     {
@@ -309,12 +373,14 @@ public class PlayerController : MonoBehaviour
     }
     void Transparentize()
     {
-        rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, 0.0f);
+        //rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, 0.0f);
+        targetAlpha = 0.0f; //目標のアルファ値を設定
     }
 
     void Appear()
     {
-        rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, 1.0f);
+        //rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, 1.0f);
+        targetAlpha = 1.0f; //目標のアルファ値を設定
     }
 }
 
