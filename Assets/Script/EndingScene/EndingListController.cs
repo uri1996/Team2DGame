@@ -26,8 +26,7 @@ public class EndingListController : MonoBehaviour
             yield return new WaitForSecondsRealtime(0.5f);//エンディング画面に入ると0.5秒待つ
             isMoving = true;
             yield return new WaitUntil(() => transform.position.y > 8f);//EndingListがスクロール終わる
-            EndingSceneEvent.CallPressTextWakeUp();//イベンドを動かす
-            EndingSceneEvent.CallCanChangeToNextScene();
+            EndingSceneEvent.CallEndingListScrollOver();//イベンドを動かす
             yield break;
         }
     }
@@ -61,10 +60,5 @@ public class EndingListController : MonoBehaviour
             }
         }
         transform.position += new Vector3(0f, value, 0f);
-
-        //if (transform.position.y >8f)//EndingListがスクロール終わる
-        //{
-        //    EndingSceneEvent.CallPressTextWakeUp();//イベンドを動かす
-        //}
     }
 }

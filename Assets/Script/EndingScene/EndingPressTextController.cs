@@ -57,11 +57,11 @@ public class EndingPressTextController : MonoBehaviour
 
     private void OnEnable()
     {
-        EndingSceneEvent.PressTextWakeUp += OnWakeUpText;//イベントにインストール
+        EndingSceneEvent.EndingListScrollOver += OnWakeUpText;//イベントにインストール
     }
     private void OnDisable()
     {
-        EndingSceneEvent.PressTextWakeUp -= OnWakeUpText;
+        EndingSceneEvent.EndingListScrollOver -= OnWakeUpText;
     }
 
     private void OnWakeUpText() //イベントが実行されたらこのメソッドが動く

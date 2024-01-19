@@ -27,11 +27,11 @@ public class ChangeToTitleScene : MonoBehaviour
     }
     private void OnEnable()
     {
-        EndingSceneEvent.CanChangeToNextScene += SetIsCanPressKey_True;
+        EndingSceneEvent.EndingListScrollOver += SetIsCanPressKey_True;
     }
     private void OnDisable()
     {
-        EndingSceneEvent.CanChangeToNextScene -= SetIsCanPressKey_True;
+        EndingSceneEvent.EndingListScrollOver -= SetIsCanPressKey_True;
     }
 
     void SetIsCanPressKey_True()

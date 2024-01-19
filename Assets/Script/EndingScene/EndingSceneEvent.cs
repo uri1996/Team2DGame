@@ -5,16 +5,9 @@ using System;
 
 public class EndingSceneEvent
 {
-    public static Action PressTextWakeUp;
-    public static void CallPressTextWakeUp()
+    public static Action EndingListScrollOver;
+    public static void CallEndingListScrollOver()
     {
-        PressTextWakeUp?.Invoke();
-    }
-
-
-    public static Action CanChangeToNextScene;
-    public static void CallCanChangeToNextScene()
-    {
-        CanChangeToNextScene?.Invoke();
+        EndingListScrollOver?.Invoke();
     }
 }
