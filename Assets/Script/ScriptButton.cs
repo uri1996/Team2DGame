@@ -23,6 +23,6 @@ public class ScriptButton : MonoBehaviour
     {
         Gamepad gamepad = Gamepad.current;
         if (gamepad.buttonEast.wasPressedThisFrame || gamepad.buttonSouth.wasPressedThisFrame)
-            SceneManager.LoadScene("Stage1");
+            SceneManager.LoadScene("Stage01");
     }
 }
