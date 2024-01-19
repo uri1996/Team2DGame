@@ -11,6 +11,8 @@ TagManager:
   - Mirror
   - BlackClearDoor
   - WhiteClearDoor
+  - TileMap
+  - Slime
   layers:
   - Default
   - TransparentFX
@@ -18,9 +20,9 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
-  - 
+  - Slime
+  - BlackPlayer
+  - WhitePlayer
   - 
   - 
   - 

@@ -372,7 +372,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 281422328}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.07098675, y: 0.37616587, z: -10}
+  m_LocalPosition: {x: 0.5608635, y: 0.37616587, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -12443,7 +12443,7 @@ GameObject:
   - component: {fileID: 993171356}
   m_Layer: 0
   m_Name: Tilemap_floor
-  m_TagString: Untagged
+  m_TagString: TileMap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14202,7 +14202,7 @@ GameObject:
   - component: {fileID: 1084444326}
   m_Layer: 0
   m_Name: Tilemap_block
-  m_TagString: Untagged
+  m_TagString: TileMap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21654,7 +21654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -2948816177474191169, guid: 13e0e0944aa036a488ca45a192fcac3b, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -2948816177474191169, guid: 13e0e0944aa036a488ca45a192fcac3b, type: 3}
       propertyPath: m_Offset.x
