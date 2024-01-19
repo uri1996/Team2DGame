@@ -4786,6 +4786,24 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!1 &187459978 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+  m_PrefabInstance: {fileID: 1948118987}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &187459979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187459978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec76a955af158d5498fa38926bb4e55b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nextDoor: {fileID: 1266159348}
 --- !u!1 &349645006
 GameObject:
   m_ObjectHideFlags: 0
@@ -10288,11 +10306,32 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+      propertyPath: playerColor.r
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
+--- !u!1 &1266159348 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+  m_PrefabInstance: {fileID: 1678212699}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1305716021
 GameObject:
   m_ObjectHideFlags: 0
@@ -11615,7 +11654,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 187459979}
   m_SourcePrefab: {fileID: 100100000, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
 --- !u!1001 &1950955272
 PrefabInstance:
