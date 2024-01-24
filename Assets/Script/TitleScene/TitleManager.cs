@@ -9,6 +9,7 @@ public class TitleManager : MonoBehaviour
     AudioSource sound;
     void Start()
     {
+        Application.targetFrameRate = 60;
         sound = GetComponent<AudioSource>();
     }
 
