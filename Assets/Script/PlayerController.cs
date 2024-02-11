@@ -4,22 +4,25 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
 
+//担当:宮川龍希
 public class PlayerController : MonoBehaviour
 {
-    Rigidbody2D rigid2D;
+    public Rigidbody2D rigid2D;
     Animator animator;  //歩行アニメーションの再生速度追加プログラム
 
-    SpriteRenderer rendererC;
+    public SpriteRenderer rendererC;
     AudioSource audioSource;
 
     float jumpForce = 375.0f;
     float walkForce = 15.0f;
-    float maxWalkSpeed = 4.0f;
+    float maxWalkSpeed = 2.0f;
 
     bool isBallAttached = false;
-    bool isChangedColor = false;
-    float targetAlpha = 1.0f;   //このアルファに向けて毎フレーム計算する
+    bool isJump = false;
     public bool isAbleToMove = true;
+
+    float targetAlpha = 1.0f;   //このアルファに向けて毎フレーム計算する
+
     private GameObject attachedBall;
 
     public GameObject blackDoor;
@@ -27,9 +30,16 @@ public class PlayerController : MonoBehaviour
 
     public Color playerColor;//プレイヤの色
 
-    public AudioClip MirrorSE;
     public AudioClip DeadSE;
-    Color tmpColor;
+
+    enum Angle
+    {
+        Right = 1, Left = -1,
+    }
+
+    Angle angle = Angle.Right;
+    public Color tmpColor;
+
     void Start()
     {
         Application.targetFrameRate = 60;
@@ -43,6 +53,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        //プレイヤーの色でレイヤーを分ける
         if (playerColor == Color.black)
         {
             gameObject.layer = 7;//黒レイヤー
@@ -53,28 +64,22 @@ public class PlayerController : MonoBehaviour
         }
         if (isAbleToMove)
         {
-            Debug.Log(gameObject.layer);
-
-            Gamepad gamepad = Gamepad.current;
             //ジャンプする
-            if (Input.GetKeyDown(KeyCode.Space) ||
-                gamepad.buttonSouth.wasPressedThisFrame) //GetKeyDownメソッドを使ってスペースキーが押されたかを調べる。
+            if (!isJump)
             {
-                this.rigid2D.AddForce(transform.up * this.jumpForce);
-                animator.SetTrigger("Jump");
+                if (Input.GetButtonDown("Jump"))
+                {
+                    this.rigid2D.AddForce(transform.up * this.jumpForce);
+                    animator.SetTrigger("Jump");
+                    isJump = true;
+                }
             }
 
             //左右に移動する
-            int key = 0;
-            float horizontalInput = gamepad.leftStick.x.ReadValue();
-            if (Input.GetKey(KeyCode.RightArrow) || horizontalInput > 0.5)
+            float inputMove = Input.GetAxis("Horizontal");
+            if (Mathf.Abs(inputMove) > 0.5f)
             {
-                key = 1;
-                animator.SetTrigger("Walk");
-            }
-            if (Input.GetKey(KeyCode.LeftArrow) || horizontalInput < -0.5)
-            {
-                key = -1;
+                angle = (Angle)Mathf.Sign(inputMove);
                 animator.SetTrigger("Walk");
             }
 
@@ -82,23 +87,21 @@ public class PlayerController : MonoBehaviour
             //プレイヤの速度
             float speedx = Mathf.Abs(this.rigid2D.velocity.x);
 
-            //スピード制限
-            //左右方向それぞれに移動制限の条件を分ける
-            if ((key > 0 && this.rigid2D.velocity.x < this.maxWalkSpeed) ||
-                (key < 0 && this.rigid2D.velocity.x > -this.maxWalkSpeed))
+            if (inputMove != 0.0f)
             {
-                this.rigid2D.AddForce(transform.right * key * this.walkForce);
-            }
+                //スピード制限
+                if ((Mathf.Abs(this.rigid2D.velocity.x) < this.maxWalkSpeed))
+                {
+                    this.rigid2D.AddForce(transform.right * (int)angle * this.walkForce);
+                }
 
-            //動く方向に応じて反転
-            if (key != 0)
-            {
-                transform.localScale = new Vector3(key, 1, 1);
+                //動く方向に応じて反転
+                transform.localScale = new Vector3((int)angle, 1, 1);
             }
 
             //プレイヤーの速度に応じてアニメーション速度を変える            
-            string anim_name = animator.GetCurrentAnimatorClipInfo(0)[0].clip.name;
-            if (anim_name.Contains("Walk"))
+            string animName = animator.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            if (animName.Contains("Walk"))
             {
                 this.animator.speed = speedx / 2.0f; //歩行アニメーションの再生速度追加プログラム
             }
@@ -108,8 +111,7 @@ public class PlayerController : MonoBehaviour
             }
 
             //ボールと合体/分裂する
-            if (Input.GetKeyDown(KeyCode.F) ||
-                gamepad.buttonEast.wasPressedThisFrame)
+            if (Input.GetButtonDown("Ball"))
             {
                 if (isBallAttached)
                 {
@@ -131,10 +133,6 @@ public class PlayerController : MonoBehaviour
             this.rigid2D.velocity = new Vector3(0.0f, this.rigid2D.velocity.y, 0.0f);
         }
 
-        if (isChangedColor)
-        {
-            ChangeColorProcess();
-        }
         ChangeAlphaProcess();
     }
     void OnTriggerEnter2D(Collider2D collision)
@@ -148,6 +146,7 @@ public class PlayerController : MonoBehaviour
 
             //白ドアだったら、次の指定された白ドアの場所に移動
             case "WhiteDoor":
+                this.animator.speed = 0.0f;
                 if (playerColor == Color.white)
                 {
                     //ぶつかったドアのスクリプトを取得する
@@ -174,6 +173,7 @@ public class PlayerController : MonoBehaviour
 
             //黒ドアだったら、次の指定された黒ドアの場所に移動
             case "BlackDoor":
+                this.animator.speed = 0.0f;
                 if (playerColor == Color.black)
                 {
                     //ぶつかったドアのスクリプトを取得する
@@ -200,6 +200,7 @@ public class PlayerController : MonoBehaviour
 
             //白ドア（クリア用）だったら
             case "WhiteClearDoor":
+                this.animator.speed = 0.0f;
                 if (playerColor == Color.white)
                 {
                     Invoke("Transparentize", 1);
@@ -214,6 +215,7 @@ public class PlayerController : MonoBehaviour
 
             //黒ドア（クリア用）だったら
             case "BlackClearDoor":
+                this.animator.speed = 0.0f;
                 if (playerColor == Color.black)
                 {
                     Invoke("Transparentize", 1);
@@ -227,21 +229,11 @@ public class PlayerController : MonoBehaviour
                 break;
 
             case "Mirror":
-                if (!isChangedColor)
-                {
-                    if (playerColor == Color.white)
-                    {
-                        playerColor = Color.black;
-                    }
-                    else
-                    {
-                        playerColor = Color.white;
-                    }
-                    //rendererC.color = playerColor;//即座に色を変更
-                    isChangedColor = true;
-                    isAbleToMove = false;
-                    this.audioSource.PlayOneShot(MirrorSE);
-                }
+                this.animator.speed = 0.0f;
+                collision.GetComponent<MirrorController>().ChangeColor();//鏡の処理
+                break;
+            default://床
+                isJump = false;
                 break;
         }
     }
@@ -290,36 +282,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    //色切り替えのフェード処理
-    void ChangeColorProcess()
-    {
-        if (playerColor == Color.white)
-        {
-            tmpColor += new Color(1.0f, 1.0f, 1.0f) * Time.deltaTime;
-            if (tmpColor.r >= playerColor.r)//r,g,bは全て同じなため
-            {
-                rendererC.color = playerColor;
-                this.rigid2D.isKinematic = false;
-                isChangedColor = false;
-                isAbleToMove = true;
-                return;
-            }
-        }
-        else
-        {
-            tmpColor -= new Color(1.0f, 1.0f, 1.0f) * Time.deltaTime;
-            if (tmpColor.r <= playerColor.r)//r,g,bは全て同じなため
-            {
-                rendererC.color = playerColor;
-                this.rigid2D.isKinematic = false;
-                isChangedColor = false;
-                isAbleToMove = true;
-                return;
-            }
-        }
-        rendererC.color = tmpColor;
-        tmpColor.a = 1.0f;//透明度は変化させない
-    }
     void ChangeAlphaProcess()
     {
         //float targetAlpha;   //このアルファに向けて毎フレーム計算する
@@ -334,7 +296,7 @@ public class PlayerController : MonoBehaviour
             }
             rendererC.color = new Color(rendererC.color.r, rendererC.color.g, rendererC.color.b, tmpColor.a);
         }
-        else if(rendererC.color.a > targetAlpha)
+        else if (rendererC.color.a > targetAlpha)
         {
             //アルファを下げる　＝　消える方
             tmpColor.a -= 2.0f * Time.deltaTime;

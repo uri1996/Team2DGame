@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5115646389865292832}
   - component: {fileID: 3725809402579847240}
   - component: {fileID: -1777273374650128189}
+  - component: {fileID: 7328615314418754876}
   m_Layer: 8
   m_Name: player
   m_TagString: Untagged
@@ -101,12 +102,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66994391ebe7e52428d4fc195cd6c576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rigid2D: {fileID: 0}
+  rendererC: {fileID: 0}
   isAbleToMove: 1
   blackDoor: {fileID: 0}
   whiteDoor: {fileID: 0}
   playerColor: {r: 0, g: 0, b: 0, a: 0}
-  MirrorSE: {fileID: 8300000, guid: 5a0b6ce8022bc474b8fa348ac936279a, type: 3}
   DeadSE: {fileID: 0}
+  tmpColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!70 &1373017643692994906
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -286,3 +289,48 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!61 &7328615314418754876
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288097482747471213}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.9662161}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 1.92}
+    newSize: {x: 1, y: 1.92}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.05, y: 0.0025997162}
+  m_EdgeRadius: 0
