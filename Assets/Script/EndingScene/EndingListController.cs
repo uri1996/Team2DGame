@@ -59,6 +59,7 @@ public class EndingListController : MonoBehaviour
                 value = Speed;
             }
         }
+        else { Debug.Log("Gamepad is Null"); }
         transform.position += new Vector3(0f, value, 0f);
     }
 }
