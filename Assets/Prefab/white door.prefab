@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8852871905536023443}
   - component: {fileID: 1171194245290930806}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2368549300386268327}
   - component: {fileID: 7969940714283537803}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1679332567724455091}
   - component: {fileID: 4848635194063001788}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7270759389935682859}
   - component: {fileID: 2314762955005071912}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -349,9 +349,9 @@ GameObject:
   - component: {fileID: 998934094194909519}
   - component: {fileID: 6603616064345986781}
   - component: {fileID: 1945256348169727802}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: white door
-  m_TagString: WhiteDoor
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -550,4 +550,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextDoor: {fileID: 0}
-  color: 0
+  color: {r: 1, g: 1, b: 1, a: 1}
+  clearDoor: 0

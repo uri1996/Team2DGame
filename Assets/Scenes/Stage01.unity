@@ -1372,6 +1372,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextDoor: {fileID: 1994182871}
+  color: {r: 0, g: 0, b: 0, a: 0}
+  clearDoor: 0
 --- !u!1001 &848920951
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11789,6 +11791,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945256348169727802, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      propertyPath: clearDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -11839,7 +11845,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_TagString
-      value: WhiteClearDoor
+      value: Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

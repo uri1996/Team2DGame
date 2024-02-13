@@ -7,21 +7,27 @@ public class DoorController : MonoBehaviour
 {
     public GameObject nextDoor; //çsêÊ
     GameObject player;
-    public enum DoorColor
-    {
-        White,Black
-    }
-    public DoorColor color;
+    public Color color;
+    public bool clearDoor;
+    Animator animator;
+    AudioSource audioSource;
     void Start()
     {
         player = GameObject.Find("player");
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
-    public void MoveDoor()
+    public void MoveToDoor()
     {
         player.GetComponent<PlayerController>().Appear();
         player.transform.position = nextDoor.transform.position;
-        nextDoor.GetComponent<Animator>().SetTrigger("Open");
-        nextDoor.GetComponent<AudioSource>().Play();
+        nextDoor.GetComponent<DoorController>().AnimationDoor();
         player.GetComponent<PlayerController>().isAbleToMove = true;
+    }
+
+    public void AnimationDoor()
+    {
+        animator.SetTrigger("Open");
+        audioSource.Play();
     }
 }

@@ -6,13 +6,10 @@ TagManager:
   tags:
   - Ball
   - Enemy
-  - BlackDoor
-  - WhiteDoor
   - Mirror
-  - BlackClearDoor
-  - WhiteClearDoor
   - TileMap
   - Slime
+  - Door
   layers:
   - Default
   - TransparentFX
@@ -23,9 +20,9 @@ TagManager:
   - Slime
   - BlackPlayer
   - WhitePlayer
-  - 
-  - 
-  - 
+  - InviciblePlayer
+  - Mirror
+  - Door
   - 
   - 
   - 

@@ -19,7 +19,8 @@ public class PlayerController : MonoBehaviour
 
     bool isBallAttached = false;
     bool isJump = false;
-    bool isInvincible = false;
+    float invincibleCnt = 0.0f;
+    bool isDead = false;
     public bool isAbleToMove = true;
 
     float targetAlpha = 1.0f;   //このアルファに向けて毎フレーム計算する
@@ -39,6 +40,13 @@ public class PlayerController : MonoBehaviour
     }
 
     Angle angle = Angle.Right;
+
+    enum Layer
+    {
+        Black = 7, White = 8, Invincible = 9,
+    }
+
+    Layer layer;
     public Color tmpColor;
 
     void Start()
@@ -54,15 +62,21 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        //プレイヤーの色でレイヤーを分ける
-        if (playerColor == Color.black)
+        //レイヤーを分ける
+        if (invincibleCnt >= 0.0f || isDead)
         {
-            gameObject.layer = 7;//黒レイヤー
+            invincibleCnt -= Time.deltaTime;//無敵時間を減らす
+            gameObject.layer = (int)Layer.Invincible;
+        }
+        else if (playerColor == Color.black)
+        {
+            gameObject.layer = (int)Layer.Black;
         }
         else
         {
-            gameObject.layer = 8;//白レイヤー
+            gameObject.layer = (int)Layer.White;
         }
+
         if (isAbleToMove)
         {
             //ジャンプする
@@ -145,82 +159,44 @@ public class PlayerController : MonoBehaviour
                 attachedBall = collision.gameObject;
                 break;
 
-            //白ドアだったら、次の指定された白ドアの場所に移動
-            case "WhiteDoor":
+            //ドア
+            case "Door":
                 this.animator.speed = 0.0f;
-                if (playerColor != Color.white) { break; }
-                //ぶつかったドアのスクリプトを取得する
+                //当たったドアのスクリプトを取得する
                 DoorController doorScript = collision.gameObject.GetComponent<DoorController>();
-                //行先のドアの情報を書き換える
-                if (doorScript == null || doorScript.nextDoor == null)
+
+                if (doorScript == null) { break; }//スクリプトがない
+                if (doorScript.nextDoor == null && !doorScript.clearDoor) { break; }//通常の扉で移動先がない
+                if (playerColor != doorScript.color) { break; }//色が違う
+
+                invincibleCnt = 4.0f;
+                Invoke("Transparentize", 1.0f);
+                doorScript.AnimationDoor();
+
+                //別の扉へ移動するのは通常の扉のみ
+                if (!doorScript.clearDoor)
                 {
-                    //行先のドアがないので、これ以上処理をしない
-                    break;
+                    doorScript.Invoke("MoveToDoor", 2.0f);
                 }
 
-                Invoke("Transparentize", 1);
-                doorScript.Invoke("MoveDoor", 2);
                 isAbleToMove = false;
-                collision.GetComponent<Animator>().SetTrigger("Open");
-                collision.GetComponent<AudioSource>().Play();
-                break;
 
-            //黒ドアだったら、次の指定された黒ドアの場所に移動
-            case "BlackDoor":
-                this.animator.speed = 0.0f;
-                if (playerColor != Color.black) { break; }
-                //削除予定
-                //ぶつかったドアのスクリプトを取得する
-                doorScript = collision.gameObject.GetComponent<DoorController>();
-                //行先のドアの情報を書き換える
-                if (doorScript == null || doorScript.nextDoor == null)
+                //次のステージへ
+                if (doorScript.clearDoor)
                 {
-                    //行先のドアがないので、これ以上処理をしない
-                    break;
-                }
-                //以上
-                Invoke("Transparentize", 1);
-                doorScript.Invoke("MoveDoor", 2);
-                isAbleToMove = false;
-                collision.GetComponent<Animator>().SetTrigger("Open");
-                collision.GetComponent<AudioSource>().Play();
-                break;
-
-            //白ドア（クリア用）だったら
-            case "WhiteClearDoor":
-                this.animator.speed = 0.0f;
-                if (playerColor == Color.white)
-                {
-                    Invoke("Transparentize", 1);
-                    isAbleToMove = false;
-                    //ドアを開ける
-                    collision.GetComponent<Animator>().SetTrigger("Open");
-                    collision.GetComponent<AudioSource>().Play();
-                    //3秒後(アニメーションが終わってから)に次のシーンへ
-                    Invoke("ToNextScene", 3);
+                    Invoke("ToNextScene", 3.0f);
                 }
                 break;
 
-            //黒ドア（クリア用）だったら
-            case "BlackClearDoor":
-                this.animator.speed = 0.0f;
-                if (playerColor == Color.black)
-                {
-                    Invoke("Transparentize", 1);
-                    isAbleToMove = false;
-                    //ドアを開ける
-                    collision.GetComponent<Animator>().SetTrigger("Open");
-                    collision.GetComponent<AudioSource>().Play();
-                    //3秒後(アニメーションが終わってから)に次のシーンへ
-                    Invoke("ToNextScene", 3);
-                }
-                break;
-
+            //鏡
             case "Mirror":
+                invincibleCnt = 2.0f;
                 this.animator.speed = 0.0f;
                 collision.GetComponent<MirrorController>().ChangeColor();//鏡の処理
                 break;
-            default://床
+
+            //床
+            default:
                 isJump = false;
                 animator.SetBool("Jump", false);
                 break;
@@ -243,7 +219,8 @@ public class PlayerController : MonoBehaviour
         {
             this.audioSource.PlayOneShot(DeadSE);
             Transparentize();
-            gameObject.layer = 7;//黒レイヤー
+            isDead = true;
+            isAbleToMove = false;
             Invoke("Retry", 2.0f);
         }
     }
@@ -274,8 +251,6 @@ public class PlayerController : MonoBehaviour
 
     void ChangeAlphaProcess()
     {
-        //float targetAlpha;   //このアルファに向けて毎フレーム計算する
-
         if (rendererC.color.a < targetAlpha)
         {
             //アルファを上げる　＝　現れる方

@@ -1468,19 +1468,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
   m_PrefabInstance: {fileID: 1045502378}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &634023806
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 634023805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec76a955af158d5498fa38926bb4e55b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextDoor: {fileID: 1804697789}
 --- !u!1001 &672420898
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1698,6 +1685,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945256348169727802, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      propertyPath: nextDoor
+      value: 
+      objectReference: {fileID: 1804697789}
+    - target: {fileID: 1945256348169727802, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -1749,10 +1744,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 634023806}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
 --- !u!1001 &1293921779
 PrefabInstance:
@@ -1938,7 +1930,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4083740735181664055, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
       propertyPath: m_TagString
-      value: BlackClearDoor
+      value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 4085703828912243448, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
+      propertyPath: clearDoor
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7200,6 +7196,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945256348169727802, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      propertyPath: nextDoor
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_RootOrder
       value: 4

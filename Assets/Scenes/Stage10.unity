@@ -228,24 +228,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
---- !u!1 &52274060 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
-  m_PrefabInstance: {fileID: 1327528960}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &52274061
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 52274060}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec76a955af158d5498fa38926bb4e55b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextDoor: {fileID: 405527863}
 --- !u!1001 &70418572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -616,24 +598,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
   m_PrefabInstance: {fileID: 614358001}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &520626184 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4083740735181664055, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
-  m_PrefabInstance: {fileID: 1902314055}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &520626185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 520626184}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec76a955af158d5498fa38926bb4e55b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  nextDoor: {fileID: 677142286}
 --- !u!1001 &614358001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7097,6 +7061,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945256348169727802, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      propertyPath: nextDoor
+      value: 
+      objectReference: {fileID: 405527863}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -7148,10 +7116,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 52274061}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
 --- !u!1 &1364841853
 GameObject:
@@ -7871,6 +7836,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1945256348169727802, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
+      propertyPath: clearDoor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4532890543004547353, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -7921,7 +7890,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5288710522572536122, guid: 04ab2e831be67e5478f42ca8b35b373f, type: 3}
       propertyPath: m_TagString
-      value: WhiteClearDoor
+      value: Door
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10599,13 +10568,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: black door
       objectReference: {fileID: 0}
+    - target: {fileID: 4085703828912243448, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
+      propertyPath: nextDoor
+      value: 
+      objectReference: {fileID: 677142286}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4083740735181664055, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 520626185}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e06b3d5d1dc02c4baeedc2b8c1e7dc0, type: 3}
 --- !u!1001 &2024390965
 PrefabInstance:

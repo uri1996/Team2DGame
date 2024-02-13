@@ -105,10 +105,8 @@ MonoBehaviour:
   rigid2D: {fileID: 0}
   rendererC: {fileID: 0}
   isAbleToMove: 1
-  blackDoor: {fileID: 0}
-  whiteDoor: {fileID: 0}
   playerColor: {r: 0, g: 0, b: 0, a: 0}
-  DeadSE: {fileID: 0}
+  DeadSE: {fileID: 8300000, guid: 77c9e85e5acdd2849a3d58c6323812a4, type: 3}
   tmpColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!70 &1373017643692994906
 CapsuleCollider2D:

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4785610908846510795}
   - component: {fileID: 2422494876489096034}
   - component: {fileID: 6712118692673193146}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -116,7 +116,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2151086770485652251}
   - component: {fileID: 5486237283417907407}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -203,9 +203,9 @@ GameObject:
   - component: {fileID: 2746587624649605656}
   - component: {fileID: -4334079827731895619}
   - component: {fileID: 4085703828912243448}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: black door
-  m_TagString: BlackDoor
+  m_TagString: Door
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -404,7 +404,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nextDoor: {fileID: 0}
-  color: 1
+  color: {r: 0, g: 0, b: 0, a: 1}
+  clearDoor: 0
 --- !u!1 &4437069815275449080
 GameObject:
   m_ObjectHideFlags: 0
@@ -415,7 +416,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5601567601348649462}
   - component: {fileID: 3840114264157841963}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -499,7 +500,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6411613331371673340}
   - component: {fileID: 2812640479212671823}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: vo12(1)_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
