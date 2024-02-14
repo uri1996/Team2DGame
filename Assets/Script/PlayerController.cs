@@ -116,6 +116,7 @@ public class PlayerController : MonoBehaviour
 
             //プレイヤーの速度に応じてアニメーション速度を変える            
             string animName = animator.GetCurrentAnimatorClipInfo(0)[0].clip.name;
+            Debug.Log(animName);
             if (animName.Contains("Walk"))
             {
                 this.animator.speed = speedx / 2.0f; //歩行アニメーションの再生速度追加プログラム
