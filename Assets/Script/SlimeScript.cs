@@ -6,9 +6,9 @@ public class SlimeScript : MonoBehaviour
 {
     public GameObject[] waypoints;
     private PlayerController player;
-    public float moveSpeed = 3f;
     public bool chaseableStage;
-    public float chaseSpeed = 5f;
+    [Range(0f, 10f)] public float moveSpeed = 3f;
+    [Range(0f,10f)]public float chaseSpeed = 5f;
     private int waypointIndex = 0;
 
     // Start is called before the first frame update
