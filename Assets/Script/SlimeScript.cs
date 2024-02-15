@@ -10,11 +10,13 @@ public class SlimeScript : MonoBehaviour
     [Range(0f, 10f)] public float moveSpeed = 3f;
     [Range(0f,10f)]public float chaseSpeed = 5f;
     private int waypointIndex = 0;
+    private Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -33,6 +35,7 @@ public class SlimeScript : MonoBehaviour
 
     void Patrol()
     {
+        animator.speed = 1f;
         //現在の位置に向ける
         float direction = Mathf.Sign(waypoints[waypointIndex].transform.position.x - transform.position.x);
         transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x) * direction, transform.localScale.y, transform.localScale.z);
@@ -58,6 +61,7 @@ public class SlimeScript : MonoBehaviour
 
     void ChasePlayer()
     {
+        animator.speed = 3f;
         //プレイヤ―へ行く
         transform.position = Vector2.MoveTowards(transform.position, player.transform.position, chaseSpeed * Time.deltaTime);
 

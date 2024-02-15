@@ -4,18 +4,37 @@ using UnityEngine;
 
 public class BallScript : MonoBehaviour
 {
-    private void OnTriggerEnter2D(Collider2D collision)
+    private PlayerController player;
+    private SpriteRenderer ballSprite;
+
+    private void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        ballSprite = GetComponent<SpriteRenderer>();
+        ballSprite.color = Color.gray;
+    }
+
+    private void OnTriggerStay2D(Collider2D collision)
     {
         //ボールがスライムとぶつかったら、敵が破壊される
-        if (collision.gameObject.CompareTag("Enemy"))
+        if (collision.gameObject.CompareTag("Slime") && ballSprite.color == Color.black)
         {
             Destroy(collision.gameObject);
         }
+
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            ballSprite.color = player.playerColor;
+            player.GetComponent<Animator>().SetBool("NewPush", true);
+        }
     }
 
-    private void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        //カラーをゲーミング発光する
-        //GetComponent<SpriteRenderer>().color = Color.HSVToRGB((Time.time * 0.5f) % 1, 1, 1);
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            ballSprite.color = Color.gray;
+            player.GetComponent<Animator>().SetBool("NewPush", false);
+        }
     }
 }
