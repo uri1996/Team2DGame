@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4525393457808978551}
   m_Layer: 0
   m_Name: player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -86,7 +86,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &8881306739435815378
@@ -104,8 +104,6 @@ MonoBehaviour:
   rigid2D: {fileID: 0}
   rendererC: {fileID: 0}
   isAbleToMove: 1
-  blackDoor: {fileID: 0}
-  whiteDoor: {fileID: 0}
   playerColor: {r: 0, g: 0, b: 0, a: 0}
   DeadSE: {fileID: 0}
   tmpColor: {r: 0, g: 0, b: 0, a: 0}
