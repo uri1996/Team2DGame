@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.InputSystem;
+using Unity.VisualScripting;
 
 //íSìñ:ã{êÏó¥äÛ
 public class PlayerController : MonoBehaviour
@@ -46,7 +47,6 @@ public class PlayerController : MonoBehaviour
         Black = 7, White = 8, Invincible = 9,
     }
 
-    Layer layer;
     public Color tmpColor;
 
     void Start()
