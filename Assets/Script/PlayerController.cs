@@ -35,6 +35,10 @@ public class PlayerController : MonoBehaviour
 
     public AudioClip DeadSE;
 
+    [SerializeField]
+    GameObject transitionPrefab;
+
+
     enum Angle
     {
         Right = 1, Left = -1,
@@ -185,6 +189,7 @@ public class PlayerController : MonoBehaviour
                 //次のステージへ
                 if (doorScript.clearDoor)
                 {
+                    Instantiate(transitionPrefab);
                     Invoke("ToNextScene", 3.0f);
                 }
                 break;
@@ -275,7 +280,7 @@ public class PlayerController : MonoBehaviour
     }
 
     void ToNextScene()
-    {
+    {       
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     void Retry()
