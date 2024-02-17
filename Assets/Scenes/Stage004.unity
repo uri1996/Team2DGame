@@ -10299,15 +10299,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: playerColor.b
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: playerColor.g
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2533520217547715984, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: playerColor.r
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8057347675088768618, guid: 70903dc067e9d5b43ad40a4f0bc586b4, type: 3}
       propertyPath: m_Color.b
