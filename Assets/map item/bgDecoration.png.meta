@@ -1,0 +1,4304 @@
+fileFormatVersion: 2
+guid: 7d9e8012169f3054ba018115bdc859b8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bgDecoration_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f311c4a84530a76408eaa01b229dde3d
+      internalID: 1291904989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_1
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0ba7c49806a524092aec42e934e05a
+      internalID: 1149811956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_2
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60e7eaba81359614eaa9b0ae1a052971
+      internalID: -428682351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_3
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca6a3d66bbab144d89a3a344d5685c5
+      internalID: -2029701759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_4
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1fcb3fc7b20e5e41a1c0d2ae08bef4a
+      internalID: -2041725211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_5
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2873adfd49ebb647b70809a7951f9c9
+      internalID: 815747347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_6
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f674356384175304d9b78929b54f2f58
+      internalID: 843357329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_7
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3463d26f1e48e49a10b53bac4f4d76
+      internalID: -1089608520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_8
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 104009c159665b445bc13255fd245b78
+      internalID: -87304074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_9
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 680038e02485bd04d9569f2c7fcf4821
+      internalID: -2062956038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_10
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36315a25061726444a2b63e982f40e0d
+      internalID: 308620475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_11
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54a120e57e99c2444ac21f791de2cb11
+      internalID: 1173962067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_12
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed1b7e767732564aaab8bc7a4a53b0c
+      internalID: 1272029684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_13
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b12e06a90c88a148ae5f673b7f6cede
+      internalID: -268900142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_14
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d3365fc1d12bc4abd8f10f76f31764
+      internalID: -2015218245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_15
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15518fce4b27bd947bb7429eebe0e95c
+      internalID: 1407478276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_16
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a156657657217424ab28ff1527cd6437
+      internalID: 851766335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_17
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dec4de8148c5f7346805ddeb1f045ca4
+      internalID: 1955066514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_18
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 972
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a962d270668ea848a3c4fd51189bcdc
+      internalID: 1071473904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8037672d48811884197c733e6530296e
+      internalID: 402463583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5106c4fdfb2b8fd4db31e602d807a299
+      internalID: 1653126882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_21
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b7668973b5173f419db924ff720335f
+      internalID: -364817511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_22
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c9029bcf6243bd4ba466d81b39b610c
+      internalID: -1696672968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_23
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38453af85eee847449ff144ce5f44340
+      internalID: -1124177496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_24
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ea9bb152060bd542989ef2c5a1a95fc
+      internalID: 426948352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_25
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6108673755d700444901cda137e0a7e3
+      internalID: 159920364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_26
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44b5ca717353dbe4e9ca6c5ac8538057
+      internalID: -842022359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_27
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15171c61fd13679409e4fbca02c3e016
+      internalID: -1335950238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_28
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 743e07a7d4914ff42b7435a6d9a23a4a
+      internalID: 1915998561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_29
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c3bc99368963847a9a09457e3a49d4
+      internalID: 2037170885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_30
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2364dac858a714daa712e542ec6035
+      internalID: 1510585193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_31
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71685e28326cf84f848be84cce0dbf1
+      internalID: 71606563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_32
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0663498616173499cdd7e61870501a
+      internalID: -189319797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_33
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8d452d4a9a75546bb97f7933cf3b38
+      internalID: -1011484205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_34
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea90adcc6d3f9094f98b50b1f0bdaae4
+      internalID: 1770679452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_35
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe64ca0f8fb267044867ef3410487365
+      internalID: -2031667618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_36
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f35694c30067c045aa4f75ad7e43f0c
+      internalID: -1550667810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_37
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 864
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c097cc2bd4f229a4e9a365b2daa1b160
+      internalID: -253115510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f281f2c33c8a5c40900fdf71e01b9e2
+      internalID: 1275935305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_39
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8cf4f0d65d5964596ca2bb6364cfc4
+      internalID: 135899924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_40
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54f41e6e8b8e81459fc5604586b86c8
+      internalID: 340420675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_41
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a64112a7a3b2804696f0dbb4c7b89eb
+      internalID: -998956760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_42
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09293ed81113e2f45a90190622cc8a30
+      internalID: -1413357974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_43
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c74f12c95f71c54c9166d757b9e2089
+      internalID: 1753406268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_44
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63d214661004bba42946737cead731cf
+      internalID: 1738707971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_45
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dee207bf4b6814a4b88c3060ebca41e7
+      internalID: 1992583252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_46
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6276c7c932b3d254d8723bfe23b56d05
+      internalID: -404143066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_47
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bef4b57961722346b4faf6f0fd9199c
+      internalID: -1578304321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_48
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68b218fceba19c445a3b0c369247fcc3
+      internalID: 1436524216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_49
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4e91a9e4546ee429c5ee5113bdd835
+      internalID: 2101755662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_50
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c349efa04985194ca250777441f648b
+      internalID: 840797743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_51
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7e321b4bde5ed48b0a8b890c3c4707
+      internalID: 1754611459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_52
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4c2ba4eba66f94ca9cd35a58a1ab82
+      internalID: 1477268074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_53
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e4f1558b5634f41853c5ed6d33c04b
+      internalID: 198498214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_54
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6140b976015bd564285f8fb953ee5ffa
+      internalID: -220443759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_55
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308805ee37f45a043a569a97ae42d1b7
+      internalID: -1970789039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_56
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 756
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462bf76ce0e5d6b4891dbd6d79a88954
+      internalID: 834665941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8960e56e77812724cbf3f08455c592f4
+      internalID: -842884762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_58
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d0af1a5d93fe5b47be9a22999323053
+      internalID: 913871495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_59
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c7e9c9c6871cc4388e941e5ef46c4a
+      internalID: 1991176585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_60
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6fdc8c3a8e19f846a98236e9acd526a
+      internalID: 221982066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_61
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1ba54be14a8334387756e95823d58f
+      internalID: 1824230321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_62
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57936e658bbc9e84ba2666c3c37288de
+      internalID: 442813370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_63
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bded51378a5dfcd4b9aa86d4b3cfd3fd
+      internalID: 2065259947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_64
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03444375dbb0e504e9b8c3b28f61b938
+      internalID: -1627238541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_65
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4266b2406358445964f7acbe306ccc
+      internalID: 1280411111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_66
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c259fa64395bc4d9cc37750760ccd4
+      internalID: -1119501555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_67
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71002beb70c08b044bfc4c57dd96d306
+      internalID: -513626187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_68
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58a5782fd28b05847ae661fb3b84ca04
+      internalID: 1136613420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_69
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b214c57e44ca48748bf5befe894badbd
+      internalID: 333872627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_70
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7cb1addc5062442942d07a46c45591
+      internalID: 2022796955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_71
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78fe1c5efe78ca2418ebb0245fce7656
+      internalID: -100343020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_72
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7ec4123c22c1c4f9fb4e3538c0bcee
+      internalID: 1727010810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_73
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2473aa1188b4e74daa6bb8b3d07ab22
+      internalID: -1165572175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_74
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2e4c78f6af414c4dbab5a1b3d873d24
+      internalID: 1307047546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_75
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 648
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17680d52bf4619409e8d0baffe88eb5
+      internalID: -862075462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_76
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dcd54f67274b634db67835fb214c38a
+      internalID: -142057914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_77
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8000dfd5a2cd5e641a6aa596c4277798
+      internalID: -1921587341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_78
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7719feb6c903764c877c9f627bd7dcb
+      internalID: 355542478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_79
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbae0814ca2242643b2a2d6f3a2f3c4d
+      internalID: -512676093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_80
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d5198aab11491b4d96aa61619c6ce0c
+      internalID: -1330139076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_81
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: becfa063f8fc62b42849459c13a16ab3
+      internalID: -488197557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_82
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b6c9c8054efd3d47a3d3ed238d4482d
+      internalID: -2079118779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_83
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18c0fe331c7d20748b505ff0ba724b57
+      internalID: 988026943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_84
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e60bf9796c491544991ce7c7270e52a
+      internalID: 176209799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_85
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd8ceca3a8f65943941f753800f91f4
+      internalID: -401778217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_86
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba23d631025861540b0e0422a9de7513
+      internalID: -1158077363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_87
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bbe12b4be44f8479a3dc617992dbaf
+      internalID: 506703522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_88
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47bc9d7a135e11043be4a5bd76c6dcfa
+      internalID: 1321517341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_89
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c7f51069ced79c4d8d9e06261ba2b0e
+      internalID: -1025722761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_90
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bece5e658a8521f4b81f12d60d324d97
+      internalID: 983812608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_91
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d14ac1917e5c454da5e95ebb04cd6d6
+      internalID: -322075882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_92
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f53218f7146cf4488b8f59b25b1b42
+      internalID: 1898965307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_93
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274fcd256ceb3a7478e33044b959aabd
+      internalID: -570114492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_94
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 540
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9029a698c66982840b0c8a5ef74980d7
+      internalID: -2022811250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_95
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41b792e137951a34a99df560d3cdfd60
+      internalID: -1694531488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_96
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0c936304c7d9547a3f96760c076bfd
+      internalID: -1792646981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_97
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca61d7d913a4f648bedad46a5c2e1e6
+      internalID: 1527048871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_98
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60aab32593c145d44a81f0e7e2ce4838
+      internalID: -1541321779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_99
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f4d0d16a8df42469536adac4b7570e
+      internalID: -1178661382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_100
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fedf56e5ae98745997804e4592db6d
+      internalID: -668155931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_101
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a8b170a23547e42b148016428dd596
+      internalID: 340036760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_102
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 113a3921fa3add64fa4b855dd5e8a76e
+      internalID: -205157764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_103
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef24cf5beec69e429ac7d3e8b351c57
+      internalID: 1203965149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_104
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b60bd698c229474f938255d5a4e8b15
+      internalID: -221017946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_105
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 301f054d36313d746876df777e0bdc26
+      internalID: 820110893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_106
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e07d175b41fdc4595518a9722601d8
+      internalID: -599336970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_107
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515a4dbd2881fff46a47e7f46a54e233
+      internalID: 715564987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_108
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71bd11bbd799a5247b28f305251f5c4f
+      internalID: -433153145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_109
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a69d13520322d4a96c9822d0b10332
+      internalID: -1478918365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_110
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb5930fe6a770654fb781562393cbcfe
+      internalID: 1252884449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_111
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac4eda0497d258a42890ed5e92f64ad1
+      internalID: -1499660944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_112
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfc054a94cfd9f499593803e4b3f656
+      internalID: -2105764260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_113
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 432
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0fb1578f5d8b4649a9a551758864850
+      internalID: -522134797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_114
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 315e63d66e5564b439a3f5aff23cda02
+      internalID: 269462233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_115
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43152ec802ed67e4eb1e2f70a4367c71
+      internalID: -350336312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_116
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08257e0645951e41a01555601595edb
+      internalID: -452449843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_117
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58c3e5ad038b3b941a2dd9ca3fe15ebf
+      internalID: 1372958239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_118
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b096df687379e5249a9c45749ccdc8c1
+      internalID: 185376244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_119
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b4ea6bd23f4334429dd615264c7c5ae
+      internalID: 1190339446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_120
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb5025612c7278f499d4bc14b82a517a
+      internalID: 519222440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_121
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a24f6b2496df5ce4aa8d2b6ce25b69eb
+      internalID: 471839247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_122
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53f64f0dc95a1a14b90046aae47deea4
+      internalID: -1196824860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_123
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9f1b0cc571eb743a0bd9aeea91616c
+      internalID: 1580179718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_124
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090357652c174d94b9a56f6492eb7f25
+      internalID: 1445208468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_125
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba217f315f1a9e14a9e75233211f764a
+      internalID: 140320250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_126
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee04ae4b7c97974da743f4114f96922
+      internalID: -1497284780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_127
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d32acde767f394747aa6eef4724484ba
+      internalID: 1067885843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_128
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b92ba172726150047a62cd54cdfc5a4f
+      internalID: -607078417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_129
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fecbcf061944e504d9dbf7b0e2fe5155
+      internalID: 997053061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_130
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa6eab552eee9d449a5cc70ffb7e960
+      internalID: 1666268851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_131
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 542ea97b606ac5e4bb4c621a0be3f8f7
+      internalID: -379782320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_132
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 324
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b6f31e03b46714b868d442785bdfa7
+      internalID: 415380398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7c622d1146a3d4487e148ddbf74a52
+      internalID: 273201187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_134
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edc6c5b5ef05ccd4ba0645d3bec94821
+      internalID: -1447794372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_135
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b8a5fb482f72a64fbd739cb104ac18a
+      internalID: -152321108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_136
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2d720ec2999274c992f16744c0e874
+      internalID: -2087846682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_137
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9c20205c308acd4ab02f650ff635907
+      internalID: 974226298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_138
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f637b1249d24e8e4aaae1cb4eac6db5b
+      internalID: -1188365418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_139
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f33bdd1a581d5f4da765ae6cc0e8971
+      internalID: -634330888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_140
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7f378fe82055704ea7c3a69930cb7bc
+      internalID: -1546805640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_141
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59c5e7771b059842a634705a8e6e0ca
+      internalID: 414312430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_142
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008f0f0296c550d498dbb9b3269bee7e
+      internalID: -1197767474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_143
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 785fbdb1b04e58742874e81fed57dc4c
+      internalID: -1635459404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_144
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e588e65841a42914794d94d3f9b246ff
+      internalID: -175805178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_145
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39234513a56cfb9489db98423136b628
+      internalID: -1375178482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_146
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7f20c104e027d458221bec959e5030
+      internalID: 815712110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_147
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a33bf29591bfeb45abd407faf86b016
+      internalID: -2027718826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_148
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a106823afc6bd8e4287a6050daeb71bd
+      internalID: -1542908526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_149
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54fa08b3e3499284e89c8651243f824a
+      internalID: -1088445477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_150
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff4e2c0aba29884d8d29a7359391d70
+      internalID: -818833484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_151
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 216
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3108405313357a4438f57ad010db6fbf
+      internalID: -2146529240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_152
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db7cd10e1c617c84a989b29ff953fa6a
+      internalID: 1143180901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_153
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bbc21afff278804993817475b752fe1
+      internalID: -1506838122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_154
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c2047050461b284aba805256a07c16f
+      internalID: 1469914746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_155
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4942eafc4cee61548801c272b0d14b8a
+      internalID: 1916657955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_156
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2394c6a54ffc3464ca0ec2ff82b9bcb1
+      internalID: 1694240362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_157
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22115668acb2a2d4c8370d448913fca0
+      internalID: 1966270612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_158
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 987a98e3e2a96204d967eb2275229325
+      internalID: 1134293965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_159
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7e31faf30ed6f4fa0e22f5261c8187
+      internalID: -1385310566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_160
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70eceae9f1f110e43805be061d9960f0
+      internalID: -793396390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_161
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bc8085e082a03943afff5c37255a51f
+      internalID: 1332901967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_162
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8563d135607b1e143bb70cc05bfc98e4
+      internalID: 727271140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_163
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c57992d5b0bcda248ad0adb3d01c6885
+      internalID: -138539846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_164
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84e779cad697f0f4797f6f60c36c24ae
+      internalID: -744705502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_165
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 405e365900585c64e88c7512f5f39a02
+      internalID: -1955421059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_166
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d1b9322d7194944da805f0ebffb82fc
+      internalID: 1750272519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_167
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382e54b14076d644eaa7781f057759a9
+      internalID: 1518083077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_168
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c8b46c3a40920949ba4a678cc2052e1
+      internalID: 1733780786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_169
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a99e304e0a26c42897a6706a2161b6
+      internalID: -1751790309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_170
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 108
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8159af0736a32f409b6d735895570d0
+      internalID: -1973168122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_171
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc80e03a088550f46807e4f5978d1bf8
+      internalID: -1134438450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_172
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f9381aa83163f4aa6deea725a1f988
+      internalID: -1316951901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_173
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44bef697726e5984a89b75bc851caf00
+      internalID: -525619007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_174
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3db07513d77ab3c45b11d4d7c5dcfd77
+      internalID: -1916136489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_175
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06bdc17346955344ac042229d58ab9f
+      internalID: 828961420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_176
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06afb8cecf9808a4c9a360e34e3ad39f
+      internalID: 393993172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_177
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6b4e209d9d94b047b2e2103f21e2c0c
+      internalID: -2066005571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_178
+      rect:
+        serializedVersion: 2
+        x: 707
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fde8f4acda6c3b45b45ccd5d7783abf
+      internalID: 1408170032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_179
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aa3247c9e1fc0c44972b1efcba881f2
+      internalID: 642436572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_180
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d7ab5c8b9fa3e845882d0ad7ed1894e
+      internalID: -798200234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_181
+      rect:
+        serializedVersion: 2
+        x: 1010
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b63eaeaf57d69da418452bdaecf92d43
+      internalID: 633551993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_182
+      rect:
+        serializedVersion: 2
+        x: 1111
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a29eadd212b0014e89f748e787f994d
+      internalID: 672705671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_183
+      rect:
+        serializedVersion: 2
+        x: 1212
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bfd78c16fb4e7d47978812bd0f09ddf
+      internalID: 657154440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_184
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3a5363a874fe104a9e82aaff464b7de
+      internalID: 2081006750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_185
+      rect:
+        serializedVersion: 2
+        x: 1414
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e18f26daefc5d46b5018e2c193816d
+      internalID: -1103433364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_186
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a97433a5d130e469e3ceedca3a9f86
+      internalID: -717734035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_187
+      rect:
+        serializedVersion: 2
+        x: 1616
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d372ab26c1ba8428b224f0b40041d9
+      internalID: -1288646332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_188
+      rect:
+        serializedVersion: 2
+        x: 1717
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dea84aee2318f1241982c7d37cd6fe9d
+      internalID: 1152524881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bgDecoration_189
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 0
+        width: 101
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72cb3136cd650654ba04ce4af5e8ca77
+      internalID: -565663153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      bgDecoration_0: 1291904989
+      bgDecoration_1: 1149811956
+      bgDecoration_10: 308620475
+      bgDecoration_100: -668155931
+      bgDecoration_101: 340036760
+      bgDecoration_102: -205157764
+      bgDecoration_103: 1203965149
+      bgDecoration_104: -221017946
+      bgDecoration_105: 820110893
+      bgDecoration_106: -599336970
+      bgDecoration_107: 715564987
+      bgDecoration_108: -433153145
+      bgDecoration_109: -1478918365
+      bgDecoration_11: 1173962067
+      bgDecoration_110: 1252884449
+      bgDecoration_111: -1499660944
+      bgDecoration_112: -2105764260
+      bgDecoration_113: -522134797
+      bgDecoration_114: 269462233
+      bgDecoration_115: -350336312
+      bgDecoration_116: -452449843
+      bgDecoration_117: 1372958239
+      bgDecoration_118: 185376244
+      bgDecoration_119: 1190339446
+      bgDecoration_12: 1272029684
+      bgDecoration_120: 519222440
+      bgDecoration_121: 471839247
+      bgDecoration_122: -1196824860
+      bgDecoration_123: 1580179718
+      bgDecoration_124: 1445208468
+      bgDecoration_125: 140320250
+      bgDecoration_126: -1497284780
+      bgDecoration_127: 1067885843
+      bgDecoration_128: -607078417
+      bgDecoration_129: 997053061
+      bgDecoration_13: -268900142
+      bgDecoration_130: 1666268851
+      bgDecoration_131: -379782320
+      bgDecoration_132: 415380398
+      bgDecoration_133: 273201187
+      bgDecoration_134: -1447794372
+      bgDecoration_135: -152321108
+      bgDecoration_136: -2087846682
+      bgDecoration_137: 974226298
+      bgDecoration_138: -1188365418
+      bgDecoration_139: -634330888
+      bgDecoration_14: -2015218245
+      bgDecoration_140: -1546805640
+      bgDecoration_141: 414312430
+      bgDecoration_142: -1197767474
+      bgDecoration_143: -1635459404
+      bgDecoration_144: -175805178
+      bgDecoration_145: -1375178482
+      bgDecoration_146: 815712110
+      bgDecoration_147: -2027718826
+      bgDecoration_148: -1542908526
+      bgDecoration_149: -1088445477
+      bgDecoration_15: 1407478276
+      bgDecoration_150: -818833484
+      bgDecoration_151: -2146529240
+      bgDecoration_152: 1143180901
+      bgDecoration_153: -1506838122
+      bgDecoration_154: 1469914746
+      bgDecoration_155: 1916657955
+      bgDecoration_156: 1694240362
+      bgDecoration_157: 1966270612
+      bgDecoration_158: 1134293965
+      bgDecoration_159: -1385310566
+      bgDecoration_16: 851766335
+      bgDecoration_160: -793396390
+      bgDecoration_161: 1332901967
+      bgDecoration_162: 727271140
+      bgDecoration_163: -138539846
+      bgDecoration_164: -744705502
+      bgDecoration_165: -1955421059
+      bgDecoration_166: 1750272519
+      bgDecoration_167: 1518083077
+      bgDecoration_168: 1733780786
+      bgDecoration_169: -1751790309
+      bgDecoration_17: 1955066514
+      bgDecoration_170: -1973168122
+      bgDecoration_171: -1134438450
+      bgDecoration_172: -1316951901
+      bgDecoration_173: -525619007
+      bgDecoration_174: -1916136489
+      bgDecoration_175: 828961420
+      bgDecoration_176: 393993172
+      bgDecoration_177: -2066005571
+      bgDecoration_178: 1408170032
+      bgDecoration_179: 642436572
+      bgDecoration_18: 1071473904
+      bgDecoration_180: -798200234
+      bgDecoration_181: 633551993
+      bgDecoration_182: 672705671
+      bgDecoration_183: 657154440
+      bgDecoration_184: 2081006750
+      bgDecoration_185: -1103433364
+      bgDecoration_186: -717734035
+      bgDecoration_187: -1288646332
+      bgDecoration_188: 1152524881
+      bgDecoration_189: -565663153
+      bgDecoration_19: 402463583
+      bgDecoration_2: -428682351
+      bgDecoration_20: 1653126882
+      bgDecoration_21: -364817511
+      bgDecoration_22: -1696672968
+      bgDecoration_23: -1124177496
+      bgDecoration_24: 426948352
+      bgDecoration_25: 159920364
+      bgDecoration_26: -842022359
+      bgDecoration_27: -1335950238
+      bgDecoration_28: 1915998561
+      bgDecoration_29: 2037170885
+      bgDecoration_3: -2029701759
+      bgDecoration_30: 1510585193
+      bgDecoration_31: 71606563
+      bgDecoration_32: -189319797
+      bgDecoration_33: -1011484205
+      bgDecoration_34: 1770679452
+      bgDecoration_35: -2031667618
+      bgDecoration_36: -1550667810
+      bgDecoration_37: -253115510
+      bgDecoration_38: 1275935305
+      bgDecoration_39: 135899924
+      bgDecoration_4: -2041725211
+      bgDecoration_40: 340420675
+      bgDecoration_41: -998956760
+      bgDecoration_42: -1413357974
+      bgDecoration_43: 1753406268
+      bgDecoration_44: 1738707971
+      bgDecoration_45: 1992583252
+      bgDecoration_46: -404143066
+      bgDecoration_47: -1578304321
+      bgDecoration_48: 1436524216
+      bgDecoration_49: 2101755662
+      bgDecoration_5: 815747347
+      bgDecoration_50: 840797743
+      bgDecoration_51: 1754611459
+      bgDecoration_52: 1477268074
+      bgDecoration_53: 198498214
+      bgDecoration_54: -220443759
+      bgDecoration_55: -1970789039
+      bgDecoration_56: 834665941
+      bgDecoration_57: -842884762
+      bgDecoration_58: 913871495
+      bgDecoration_59: 1991176585
+      bgDecoration_6: 843357329
+      bgDecoration_60: 221982066
+      bgDecoration_61: 1824230321
+      bgDecoration_62: 442813370
+      bgDecoration_63: 2065259947
+      bgDecoration_64: -1627238541
+      bgDecoration_65: 1280411111
+      bgDecoration_66: -1119501555
+      bgDecoration_67: -513626187
+      bgDecoration_68: 1136613420
+      bgDecoration_69: 333872627
+      bgDecoration_7: -1089608520
+      bgDecoration_70: 2022796955
+      bgDecoration_71: -100343020
+      bgDecoration_72: 1727010810
+      bgDecoration_73: -1165572175
+      bgDecoration_74: 1307047546
+      bgDecoration_75: -862075462
+      bgDecoration_76: -142057914
+      bgDecoration_77: -1921587341
+      bgDecoration_78: 355542478
+      bgDecoration_79: -512676093
+      bgDecoration_8: -87304074
+      bgDecoration_80: -1330139076
+      bgDecoration_81: -488197557
+      bgDecoration_82: -2079118779
+      bgDecoration_83: 988026943
+      bgDecoration_84: 176209799
+      bgDecoration_85: -401778217
+      bgDecoration_86: -1158077363
+      bgDecoration_87: 506703522
+      bgDecoration_88: 1321517341
+      bgDecoration_89: -1025722761
+      bgDecoration_9: -2062956038
+      bgDecoration_90: 983812608
+      bgDecoration_91: -322075882
+      bgDecoration_92: 1898965307
+      bgDecoration_93: -570114492
+      bgDecoration_94: -2022811250
+      bgDecoration_95: -1694531488
+      bgDecoration_96: -1792646981
+      bgDecoration_97: 1527048871
+      bgDecoration_98: -1541321779
+      bgDecoration_99: -1178661382
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
